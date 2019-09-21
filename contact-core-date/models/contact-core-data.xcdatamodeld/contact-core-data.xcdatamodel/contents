@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Fruit" representedClassName="Fruit" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="refrigerator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Refrigerator" inverseName="fruits" inverseEntity="Refrigerator" syncable="YES"/>
+    </entity>
+    <entity name="Refrigerator" representedClassName="Refrigerator" syncable="YES" codeGenerationType="class">
+        <relationship name="fruits" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Fruit" inverseName="refrigerator" inverseEntity="Fruit" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Fruit" positionX="-654.0703125" positionY="672.22265625" width="128" height="88"/>
+        <element name="Refrigerator" positionX="-949.28125" positionY="701.85546875" width="128" height="58"/>
+    </elements>
+</model>
